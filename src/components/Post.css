@@ -1,6 +1,7 @@
 .left-container{
     flex:1;
     background-color:#84A98C;
+    
 }
 
 .right-container{
@@ -21,11 +22,6 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.card-link {
-    text-decoration: none;
-    color: black;
-}
-
 .card-header {
     background-color: #354F52;
     color: white;
@@ -43,30 +39,12 @@
     font-weight: bolder;
 }
 
-.loading-gif {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-}
-
-.input-post-title{
-    width: 100%;
-}
-.input-post-body{
-    width: 100%;
-
-}
-
 .post-box{
     border: 2px solid #1f9eb7;
     border-radius: 6px;
     background: rgb(124,156,166);
     background: linear-gradient(90deg, rgba(124,156,166,1) 80%, rgba(17,77,111,1) 100%);
     margin: 50px 100px 50px 100px;
-}
-
-.input-post-title{
-    height: 38px;
 }
 
 .down-arrow{
@@ -89,11 +67,5 @@
     bottom:0;
     margin-bottom: 40px;
     z-index: 1;  
-}
-
-.post-btn{
-    background-color: #ffffff !important;
-    color: #114d6f !important;
-    
 }
 
