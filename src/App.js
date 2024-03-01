@@ -1,7 +1,7 @@
 import Header from './components/Header';
 import './App.css';
-import Post from './components/Post'
 import { useState } from 'react';
+import PageContainer from './components/PageContainer';
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
   return (
     <div>
       <Header toggleComments={toggleComments} showComments={showComments} />
-      <Post showComments={showComments} />
+      <PageContainer  showComments={showComments}/>
     </div>
   );
 }

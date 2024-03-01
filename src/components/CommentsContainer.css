@@ -1,0 +1,47 @@
+.comment-card {
+   position: fixed;
+   margin: 30px 80px 50px 50px;
+}
+
+.comment {
+    margin: 30px 50px 50px 50px;
+}
+
+.comment-title {
+    color: #2F3E46;
+}
+
+.comment-container {
+    border: 3px solid #91afc0;
+    padding: 10px 10px 10px 10px;
+}
+
+.comment-userName {
+    color:#1f9eb7;
+    text-align: right;
+    display: block;
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.comment-info {
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #354F52;
+ 
+}
+
+.comment-body {
+    word-spacing: 5px;
+    padding: 20px 15px 0 30px;
+}
+
+.username{
+    text-align: right;
+    text-decoration: none;
+    color: #1f9eb7;
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+    font-weight: bolder;
+    
+}

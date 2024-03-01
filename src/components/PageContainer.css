@@ -1,0 +1,71 @@
+.left-container{
+    flex:1;
+    background-color:#84A98C;
+    
+}
+
+.right-container{
+    flex:1;
+    background-color:#52796F;
+}
+
+.post-container {
+    border-color: black;
+    margin: 30px 100px 50px 100px;
+}
+
+.userName {
+    text-align: right;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-header {
+    background-color: #354F52;
+    color: white;
+}
+
+.card-text {
+    word-spacing: 5px;
+}
+
+.user {
+    text-decoration: none;
+    color: #1f9eb7;
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.post-box{
+    border: 2px solid #1f9eb7;
+    border-radius: 6px;
+    background: rgb(124,156,166);
+    background: linear-gradient(90deg, rgba(124,156,166,1) 80%, rgba(17,77,111,1) 100%);
+    margin: 50px 100px 50px 100px;
+}
+
+.down-arrow{
+    margin-right: 30px;
+    width: 40px;
+    height: 40px;
+    color: #CAD2C5;
+    position: fixed;
+    top:50;
+    right:5;  
+    z-index: 1; 
+}
+
+.up-arrow{
+    margin-right: 30px;
+    width: 40px;
+    height: 40px;
+    color: #CAD2C5;
+    position: fixed;
+    bottom:0;
+    margin-bottom: 40px;
+    z-index: 1;  
+}
+
