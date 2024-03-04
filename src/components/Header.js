@@ -1,17 +1,19 @@
+import { useContext } from 'react';
 import './Header.css'
+import { AppContext } from '../context/AppContext';
 
-const Header = ({toggleComments, showComments}) => {
+const Header = ({ children }) => {
+  const { toggleComments, showComments } = useContext(AppContext);
+
   return (
     <>
       <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid">
           <a className="navbar-brand" >Post</a>
-          {showComments ?
-            <button className="btn comment-btn header-btn" onClick={toggleComments}>Hide</button> :
-            <button className="btn comment-btn header-btn" onClick={toggleComments}>Show</button>
-          }
+          <button className="btn comment-btn header-btn" onClick={toggleComments}>{!showComments ? 'Comments Show' : 'Comments Hide'}</button>
         </div>
       </nav>
+      {children}
     </>
   )
 }
