@@ -1,6 +1,6 @@
 .comment-card {
-   position: fixed;
-   margin: 30px 80px 50px 50px;
+   /* position: fixed; */
+   margin: 30px 50px 50px 50px;
 }
 
 .comment {
@@ -28,7 +28,6 @@
 .comment-info {
     padding: 5px 5px 5px 5px;
     border: 1px solid #354F52;
- 
 }
 
 .comment-body {
@@ -45,3 +44,11 @@
     font-weight: bolder;
     
 }
+
+.post-details{
+    position: sticky;
+    top: 50px;
+    overflow-y: auto;
+    height: 100vh;
+}
+

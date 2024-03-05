@@ -3,18 +3,15 @@ import { createContext, useState } from "react";
 export const PostContext = createContext();
 
 const PostProvider = ({ children }) => {
-    const [commentData, setCommentData] = useState()
+    const [postData, setPostData] = useState()
 
-    const clickPost = (postMessage) => {
-        setCommentData(postMessage)
+    const handleClickPost = (postContent) => {
+        setPostData(postContent)
     }
 
-    const close = () => {
-        setCommentData(null)
-    }
     return (
         <>
-            <PostContext.Provider value={{ commentData, clickPost, close }}>
+            <PostContext.Provider value={{ postData, handleClickPost }}>
                 {children}
             </PostContext.Provider>
         </>

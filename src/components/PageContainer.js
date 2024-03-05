@@ -1,22 +1,20 @@
 import './PageContainer.css'
-
 import PostsContainer from './PostsContainer';
-import CommentsContainer from './PostDetails';
+import PostDetails from './PostDetails';
 import { PostContext } from "../context/PostContext";
 import { useContext } from 'react';
 
-
 const PageContainer = () => {
-    const { commentData } = useContext(PostContext)
+    const { postData } = useContext(PostContext)
     return (
         <>
-            <div className='d-flex'>
+            <div className='container-fluid d-flex p-0'>
                 <div className='left-container'>
                     <PostsContainer />
                 </div>
-                {commentData &&
+                {postData &&
                     <div className='right-container'>
-                        <CommentsContainer />
+                        <PostDetails  />
                     </div>}
             </div>
         </>

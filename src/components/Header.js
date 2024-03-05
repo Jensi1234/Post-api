@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import './Header.css'
 import { AppContext } from '../context/AppContext';
 
-const Header = ({ children }) => {
+const Header = () => {
   const { toggleComments, showComments } = useContext(AppContext);
 
   return (
@@ -13,7 +13,6 @@ const Header = ({ children }) => {
           <button className="btn comment-btn header-btn" onClick={toggleComments}>{!showComments ? 'Comments Show' : 'Comments Hide'}</button>
         </div>
       </nav>
-      {children}
     </>
   )
 }
